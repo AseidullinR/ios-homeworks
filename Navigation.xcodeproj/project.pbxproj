@@ -13,6 +13,7 @@
 		219E7F652923C38E002CAE39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219E7F632923C38E002CAE39 /* Main.storyboard */; };
 		219E7F672923C38F002CAE39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219E7F662923C38F002CAE39 /* Assets.xcassets */; };
 		219E7F6A2923C38F002CAE39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219E7F682923C38F002CAE39 /* LaunchScreen.storyboard */; };
+		219E7F722923C433002CAE39 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 219E7F712923C433002CAE39 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		219E7F662923C38F002CAE39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		219E7F692923C38F002CAE39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		219E7F6B2923C38F002CAE39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		219E7F712923C433002CAE39 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				219E7F662923C38F002CAE39 /* Assets.xcassets */,
 				219E7F682923C38F002CAE39 /* LaunchScreen.storyboard */,
 				219E7F6B2923C38F002CAE39 /* Info.plist */,
+				219E7F712923C433002CAE39 /* .gitignore */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				219E7F722923C433002CAE39 /* .gitignore in Resources */,
 				219E7F6A2923C38F002CAE39 /* LaunchScreen.storyboard in Resources */,
 				219E7F672923C38F002CAE39 /* Assets.xcassets in Resources */,
 				219E7F652923C38E002CAE39 /* Main.storyboard in Resources */,

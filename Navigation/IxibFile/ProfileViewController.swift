@@ -15,9 +15,10 @@ class ProfileViewController: UIViewController {
     }
 
     func loadProfileView() {
-        if let nibView = Bundle.main.loadNibNamed("ProfileView", owner: nil, options: nil)?.first as? ProfileView {
-            nibView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-            view.addSubview(nibView)
+        if let profileView = Bundle.main.loadNibNamed("ProfileView", owner: nil, options: nil)?.first as? ProfileView {
+            profileView.frame = view.bounds
+            profileView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+            view.addSubview(profileView)
         } else {
             print("Error")
         }

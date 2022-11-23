@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		212FB462292EB691000A4CFC /* OptionTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FB461292EB691000A4CFC /* OptionTabController.swift */; };
 		2153FAF5292ABDA20027810B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAF4292ABDA20027810B /* TabBarController.swift */; };
 		2153FAF9292ABE1C0027810B /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAF8292ABE1C0027810B /* FeedController.swift */; };
 		2153FAFB292ABE3C0027810B /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAFA292ABE3C0027810B /* ProfileController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		212FB461292EB691000A4CFC /* OptionTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTabController.swift; sourceTree = "<group>"; };
 		2153FAF4292ABDA20027810B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		2153FAF8292ABE1C0027810B /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		2153FAFA292ABE3C0027810B /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				219E7F5D2923C38E002CAE39 /* AppDelegate.swift */,
 				219E7F5F2923C38E002CAE39 /* SceneDelegate.swift */,
 				2153FAF4292ABDA20027810B /* TabBarController.swift */,
+				212FB461292EB691000A4CFC /* OptionTabController.swift */,
 				2153FAFA292ABE3C0027810B /* ProfileController.swift */,
 				2153FAF8292ABE1C0027810B /* FeedController.swift */,
 				2153FAFC292ACBCD0027810B /* PostViewController.swift */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2153FAFD292ACBCD0027810B /* PostViewController.swift in Sources */,
+				212FB462292EB691000A4CFC /* OptionTabController.swift in Sources */,
 				2153FAF5292ABDA20027810B /* TabBarController.swift in Sources */,
 				2153FAF9292ABE1C0027810B /* FeedController.swift in Sources */,
 				219E7F5E2923C38E002CAE39 /* AppDelegate.swift in Sources */,
@@ -303,7 +307,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Navigation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,7 +333,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Navigation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

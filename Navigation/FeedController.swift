@@ -12,7 +12,8 @@ final class FeedController: UIViewController {
     private let button: UIButton = {
         let button = UIButton()
         button.setTitle("Show post", for: .normal)
-        button.setTitleColor(UIColor.black, for: .normal)
+        button.setTitleColor(UIColor.gray, for: .normal)
+        button.setTitleColor(UIColor.black, for: .highlighted)
         button.backgroundColor = .yellow
         button.layer.cornerRadius = 14
         return button

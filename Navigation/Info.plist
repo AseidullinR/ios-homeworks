@@ -19,5 +19,23 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIDefaultLaunchScreen</key>
+		<string></string>
+		<key>UIImageName</key>
+		<string>Crown</string>
+		<key>UILaunchScreenDefinitions</key>
+		<array>
+			<dict>
+				<key>UIImageName</key>
+				<string></string>
+				<key>UILaunchScreenIdentifier</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>UIURLToLaunchScreenAssociations</key>
+		<dict/>
+	</dict>
 </dict>
 </plist>

@@ -18,7 +18,7 @@ final class PostViewController: UIViewController {
     }()
 
     private let post: Post
-    
+
     init(post: Post) {
         self.post = post
         super.init(nibName: nil, bundle: nil)
@@ -38,6 +38,7 @@ final class PostViewController: UIViewController {
     // Добавление Bar button item
     private func setupBarButtonItem() {
         let barItem = UIBarButtonItem(image: UIImage(systemName: "shareplay"), style: .plain, target: self, action: #selector(onClickBarItem))
+        barItem.tintColor = .black
         self.navigationItem.rightBarButtonItem = barItem
     }
 

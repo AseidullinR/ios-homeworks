@@ -44,8 +44,8 @@ final class ProfileHeaderView: UIView {
         return text
     }()
 
-    private let textStatus: UITextField = {
-        let text = UITextField()
+    private let textStatus: TextFieldWithPadding = {
+        let text = TextFieldWithPadding()
         text.textColor = .black
         text.backgroundColor = .white
         text.font = .systemFont(ofSize: 15, weight: UIFont.Weight.regular)

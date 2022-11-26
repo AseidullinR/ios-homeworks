@@ -12,9 +12,9 @@ final class InfoViewController: UIViewController {
     private let button: UIButton = {
         let button = UIButton()
         button.setTitle("Repost", for: .normal)
-        button.setTitleColor(UIColor.gray, for: .normal)
-        button.setTitleColor(UIColor.black, for: .highlighted)
-        button.backgroundColor = .yellow
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.setTitleColor(UIColor.gray, for: .highlighted)
+        button.backgroundColor = .blue
         button.layer.cornerRadius = 14
         button.frame = CGRect(x: 270, y: 50, width: 100, height: 50)
         return button
@@ -27,7 +27,7 @@ final class InfoViewController: UIViewController {
             print ("Репост")
             self?.dismiss(animated: true)
         }
-        let secondAction = UIAlertAction(title: "Отмена", style: .default) {[weak self] _ in
+        let secondAction = UIAlertAction(title: "Отмена", style: .destructive) {[weak self] _ in
             print ("Отмена")
             self?.dismiss(animated: true)
         }
@@ -48,7 +48,7 @@ final class InfoViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        view.backgroundColor = .black
+        view.backgroundColor = .systemGray2
         view.addSubview(button)
         setupButton()
         setupAlertConfiguration()

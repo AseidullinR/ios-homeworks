@@ -9,7 +9,7 @@ import UIKit
 
 final class ProfileHeaderView: UIView {
 
-    var mode = Mode.edit
+//    var mode = Mode.edit
 
     private let profileTitleLabel: UILabel = {
         let label = UILabel()
@@ -102,14 +102,19 @@ final class ProfileHeaderView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .lightGray
+        addAllSubview()
+
+        setupConstraints()
+        setupButton()
+        editText()
+    }
+
+    private func addAllSubview() {
         addSubview(button)
         addSubview(profileTitleLabel)
         addSubview(textView)
         addSubview(imageAvatar)
         addSubview(textStatus)
-        setupConstraints()
-        setupButton()
-        editText()
     }
 
     private func setupButton() {
@@ -118,11 +123,11 @@ final class ProfileHeaderView: UIView {
 
     @objc
     private func buttonPressed() {
-        mode.toggle()
-        _ = mode == .preview ? "Edit" : "Preview"
-        let toValue: CGFloat = mode == .preview ? 0 : 1
-        textView.animateBorderWidth(toValue: toValue, duration: 0.5)
-        textStatus.isHidden = mode == .preview
+//        mode.toggle()
+//        _ = mode == .preview ? "Edit" : "Preview"
+//        let toValue: CGFloat = mode == .preview ? 0 : 1
+//        textView.animateBorderWidth(toValue: toValue, duration: 0.5)
+        // textStatus.isHidden = mode == .preview
         textView.text = statusText
 
         let text = textView.text ?? ""
@@ -132,8 +137,6 @@ final class ProfileHeaderView: UIView {
             print(text)
         }
     }
-
-
 
     private func editText() {
         textStatus.addTarget(self, action: #selector(statusTextChanged), for: .editingChanged)
@@ -157,25 +160,25 @@ final class ProfileHeaderView: UIView {
 }
 
 
-extension UIView {
-    func animateBorderWidth(toValue: CGFloat, duration: Double) {
-        let animation:CABasicAnimation = CABasicAnimation(keyPath: "borderWidth")
-        animation.fromValue = layer.borderWidth
-        animation.toValue = toValue
-        animation.duration = duration
-        layer.add(animation, forKey: "Width")
-        layer.borderWidth = toValue
-    }
-}
+//extension UIView {
+//    func animateBorderWidth(toValue: CGFloat, duration: Double) {
+//        let animation:CABasicAnimation = CABasicAnimation(keyPath: "borderWidth")
+//        animation.fromValue = layer.borderWidth
+//        animation.toValue = toValue
+//        animation.duration = duration
+//        layer.add(animation, forKey: "Width")
+//        layer.borderWidth = toValue
+//    }
+//}
 
-enum Mode {
-    case preview
-    case edit
-
-    mutating func toggle() {
-        switch self {
-        case .preview: self = .edit
-        case .edit: self = .preview
-        }
-    }
-}
+//enum Mode {
+//    case preview
+//    case edit
+//
+//    mutating func toggle() {
+//        switch self {
+//        case .preview: self = .edit
+//        case .edit: self = .preview
+//        }
+//    }
+//}

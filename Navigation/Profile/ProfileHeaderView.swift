@@ -9,7 +9,7 @@ import UIKit
 
 final class ProfileHeaderView: UIView {
 
-//    var mode = Mode.edit
+    //    var mode = Mode.edit
 
     private let profileTitleLabel: UILabel = {
         let label = UILabel()
@@ -76,7 +76,6 @@ final class ProfileHeaderView: UIView {
     }()
 
     private func setupConstraints() {
-
         NSLayoutConstraint.activate([
             profileTitleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 27),
             profileTitleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
@@ -102,14 +101,13 @@ final class ProfileHeaderView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .lightGray
-        addAllSubview()
-
+        addAllSubviews()
         setupConstraints()
         setupButton()
         editText()
     }
 
-    private func addAllSubview() {
+    private func addAllSubviews() {
         addSubview(button)
         addSubview(profileTitleLabel)
         addSubview(textView)
@@ -123,10 +121,10 @@ final class ProfileHeaderView: UIView {
 
     @objc
     private func buttonPressed() {
-//        mode.toggle()
-//        _ = mode == .preview ? "Edit" : "Preview"
-//        let toValue: CGFloat = mode == .preview ? 0 : 1
-//        textView.animateBorderWidth(toValue: toValue, duration: 0.5)
+        //        mode.toggle()
+        //        _ = mode == .preview ? "Edit" : "Preview"
+        //        let toValue: CGFloat = mode == .preview ? 0 : 1
+        //        textView.animateBorderWidth(toValue: toValue, duration: 0.5)
         // textStatus.isHidden = mode == .preview
         textView.text = statusText
 
@@ -147,8 +145,6 @@ final class ProfileHeaderView: UIView {
         statusText = textStatus.text!
     }
 
-
-
     override func layoutSubviews() {
         super.layoutSubviews()
         imageAvatar.layer.cornerRadius = imageAvatar.frame.size.width / 2
@@ -158,7 +154,6 @@ final class ProfileHeaderView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
-
 
 //extension UIView {
 //    func animateBorderWidth(toValue: CGFloat, duration: Double) {

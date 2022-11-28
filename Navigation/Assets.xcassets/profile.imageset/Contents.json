@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Crown.jpg",
+      "filename" : "profile.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Crown 1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Crown 2.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

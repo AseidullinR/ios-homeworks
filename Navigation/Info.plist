@@ -21,8 +21,6 @@
 	</dict>
 	<key>UILaunchScreen</key>
 	<dict>
-		<key>UIDefaultLaunchScreen</key>
-		<string></string>
 		<key>UIImageName</key>
 		<string>Crown</string>
 		<key>UILaunchScreenDefinitions</key>
@@ -37,5 +35,7 @@
 		<key>UIURLToLaunchScreenAssociations</key>
 		<dict/>
 	</dict>
+	<key>imag</key>
+	<string></string>
 </dict>
 </plist>

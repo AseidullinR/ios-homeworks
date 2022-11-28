@@ -12,7 +12,7 @@ final class PostViewController: UIViewController {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "New post"
-        label.textColor = .white
+        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -31,14 +31,14 @@ final class PostViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = post.title
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .lightGray
         setupBarButtonItem()
     }
     
     // Добавление Bar button item
     private func setupBarButtonItem() {
         let barItem = UIBarButtonItem(image: UIImage(systemName: "shareplay"), style: .plain, target: self, action: #selector(onClickBarItem))
-        barItem.tintColor = .black
+        barItem.tintColor = .blue
         self.navigationItem.rightBarButtonItem = barItem
     }
 

@@ -13,4 +13,4 @@ struct Post {
     let description: String
 }
 
-let newPost = Post(title: "Новость", description: "Срочно, срочно!")
+let newPost = Post(title: "Новости", description: "Срочно, срочно!")

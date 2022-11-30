@@ -29,7 +29,7 @@ final class ProfileViewController: UIViewController  {
         view.addSubview(exampleName)
         view.addSubview(newButton)
         setupBigConstraints()
-        exampleName.backgroundColor = .gray
+        exampleName.backgroundColor = .green
         title = "Profile"
         setupBigConstraints()
     }
@@ -37,7 +37,6 @@ final class ProfileViewController: UIViewController  {
     private func setupBigConstraints() {
         NSLayoutConstraint.activate([
             exampleName.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            exampleName.heightAnchor.constraint(equalToConstant: 220),
             exampleName.rightAnchor.constraint(equalTo: view.rightAnchor),
             exampleName.leftAnchor.constraint(equalTo: view.leftAnchor),
             newButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),

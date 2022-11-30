@@ -18,8 +18,10 @@ final class TabBarController: UITabBarController {
         setupUI()
     }
     private func setupUI() {
-        feedTabController = UINavigationController(rootViewController: FeedController())
-        profileTabController = UINavigationController.init(rootViewController: ProfileController())
+        feedTabController = UINavigationController(rootViewController: FeedViewController())
+        profileTabController = UINavigationController.init(rootViewController: ProfileViewController())
+
+
 
         self.viewControllers = [feedTabController, profileTabController]
 
@@ -36,6 +38,7 @@ final class TabBarController: UITabBarController {
 
         UITabBar.appearance().tintColor = .black
         UITabBar.appearance().backgroundColor = .white
+        UITabBar.appearance().tintColor = UIColor(white: 0, alpha: 0.5)
         UITabBar.appearance().unselectedItemTintColor = .gray
 
     }

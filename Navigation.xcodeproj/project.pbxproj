@@ -10,8 +10,8 @@
 		212FB4672930ED70000A4CFC /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FB4662930ED70000A4CFC /* ProfileHeaderView.swift */; };
 		212FB46B29329F16000A4CFC /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FB46A29329F16000A4CFC /* TextFieldWithPadding.swift */; };
 		2153FAF5292ABDA20027810B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAF4292ABDA20027810B /* TabBarController.swift */; };
-		2153FAF9292ABE1C0027810B /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAF8292ABE1C0027810B /* FeedController.swift */; };
-		2153FAFB292ABE3C0027810B /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAFA292ABE3C0027810B /* ProfileController.swift */; };
+		2153FAF9292ABE1C0027810B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAF8292ABE1C0027810B /* FeedViewController.swift */; };
+		2153FAFB292ABE3C0027810B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAFA292ABE3C0027810B /* ProfileViewController.swift */; };
 		2153FAFD292ACBCD0027810B /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAFC292ACBCD0027810B /* PostViewController.swift */; };
 		2153FAFF292ADC850027810B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAFE292ADC850027810B /* Post.swift */; };
 		2153FB01292BB6600027810B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FB00292BB6600027810B /* InfoViewController.swift */; };
@@ -26,8 +26,8 @@
 		212FB4662930ED70000A4CFC /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		212FB46A29329F16000A4CFC /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
 		2153FAF4292ABDA20027810B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		2153FAF8292ABE1C0027810B /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
-		2153FAFA292ABE3C0027810B /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		2153FAF8292ABE1C0027810B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		2153FAFA292ABE3C0027810B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2153FAFC292ACBCD0027810B /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		2153FAFE292ADC850027810B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2153FB00292BB6600027810B /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				212FB4662930ED70000A4CFC /* ProfileHeaderView.swift */,
-				2153FAFA292ABE3C0027810B /* ProfileController.swift */,
+				2153FAFA292ABE3C0027810B /* ProfileViewController.swift */,
 				212FB46A29329F16000A4CFC /* TextFieldWithPadding.swift */,
 			);
 			path = Profile;
@@ -84,7 +84,7 @@
 				219E7F5F2923C38E002CAE39 /* SceneDelegate.swift */,
 				2153FAF4292ABDA20027810B /* TabBarController.swift */,
 				212FB4632930ECD7000A4CFC /* Profile */,
-				2153FAF8292ABE1C0027810B /* FeedController.swift */,
+				2153FAF8292ABE1C0027810B /* FeedViewController.swift */,
 				2153FAFC292ACBCD0027810B /* PostViewController.swift */,
 				2153FB00292BB6600027810B /* InfoViewController.swift */,
 				2153FAFE292ADC850027810B /* Post.swift */,
@@ -169,14 +169,14 @@
 			files = (
 				2153FAFD292ACBCD0027810B /* PostViewController.swift in Sources */,
 				2153FAF5292ABDA20027810B /* TabBarController.swift in Sources */,
-				2153FAF9292ABE1C0027810B /* FeedController.swift in Sources */,
+				2153FAF9292ABE1C0027810B /* FeedViewController.swift in Sources */,
 				219E7F5E2923C38E002CAE39 /* AppDelegate.swift in Sources */,
 				219E7F602923C38E002CAE39 /* SceneDelegate.swift in Sources */,
 				2153FAFF292ADC850027810B /* Post.swift in Sources */,
 				212FB46B29329F16000A4CFC /* TextFieldWithPadding.swift in Sources */,
 				212FB4672930ED70000A4CFC /* ProfileHeaderView.swift in Sources */,
 				2153FB01292BB6600027810B /* InfoViewController.swift in Sources */,
-				2153FAFB292ABE3C0027810B /* ProfileController.swift in Sources */,
+				2153FAFB292ABE3C0027810B /* ProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

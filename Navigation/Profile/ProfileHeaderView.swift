@@ -40,7 +40,7 @@ final class ProfileHeaderView: UIView {
         label.font = .systemFont(ofSize: 14, weight: UIFont.Weight.regular)
         label.backgroundColor = .gray
         label.layer.cornerRadius = 12
-        label.layer.borderColor = UIColor.gray.cgColor
+        label.layer.borderColor = UIColor.systemGray.cgColor
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -80,7 +80,7 @@ final class ProfileHeaderView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .lightGray
+        backgroundColor = .gray
         addAllSubviews()
         setupConstraints()
         setupButton()

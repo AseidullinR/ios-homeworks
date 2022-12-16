@@ -8,8 +8,8 @@
 import UIKit
 
 final class TabBarController: UITabBarController {
-    private var feedTabController: UINavigationController!
     private var profileTabController: UINavigationController!
+    private var feedTabController: UINavigationController!
 
 
     override func viewDidLoad() {
@@ -18,22 +18,22 @@ final class TabBarController: UITabBarController {
         setupUI()
     }
     private func setupUI() {
+        profileTabController = UINavigationController.init(rootViewController: LogInViewController())
         feedTabController = UINavigationController(rootViewController: FeedViewController())
-        profileTabController = UINavigationController.init(rootViewController: ProfileViewController())
 
+        self.viewControllers = [profileTabController, feedTabController,]
 
-
-        self.viewControllers = [feedTabController, profileTabController]
-
-        let feedItem = UITabBarItem(title: "FEED",
-                                    image: UIImage(systemName: "house.fill"), tag: 0)
 
         let profileItem = UITabBarItem(title: "Profile",
                                        image:  UIImage(systemName: "person.fill"), tag: 1)
 
+        let feedItem = UITabBarItem(title: "FEED",
+                                    image: UIImage(systemName: "house.fill"), tag: 0)
 
-        feedTabController.tabBarItem = feedItem
+
         profileTabController.tabBarItem = profileItem
+        feedTabController.tabBarItem = feedItem
+
 
 
         UITabBar.appearance().tintColor = .black

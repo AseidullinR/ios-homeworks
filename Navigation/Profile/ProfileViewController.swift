@@ -29,7 +29,7 @@ final class ProfileViewController: UIViewController  {
         view.addSubview(exampleName)
         view.addSubview(newButton)
         setupBigConstraints()
-        exampleName.backgroundColor = .green
+        exampleName.backgroundColor = .gray
         title = "Profile"
         setupBigConstraints()
     }

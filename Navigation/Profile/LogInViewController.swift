@@ -196,8 +196,9 @@ final class LogInViewController: UIViewController {
 
     
     @objc private func touchLoginButton() {
-        let profile = ProfileViewController()
-        navigationController?.setViewControllers([profile], animated: true)
+//        let profile = ProfileViewController()
+//        navigationController?.setViewControllers([ProfileViewController()], animated: true)
+        navigationController?.pushViewController(ProfileViewController(), animated: true)
     }
 }
 
@@ -221,20 +222,6 @@ extension LogInViewController: UITextFieldDelegate {
     }
 }
 
-extension UIView {
-    func addNewSubviews(_ subviews: UIView...) {
-        for item in subviews {
-            self.addSubview(item)
-        }
-    }
-}
 
-extension UIImage {
-    func image(alpha: CGFloat) -> UIImage? {
-        UIGraphicsBeginImageContextWithOptions(size, false, scale)
-        draw(at: .zero, blendMode: .normal, alpha: alpha)
-        let imageNew = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return imageNew
-    }
-}
+
+

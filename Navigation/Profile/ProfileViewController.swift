@@ -26,10 +26,10 @@ final class ProfileViewController: UIViewController  {
     }()
 
     override func viewDidLoad() {
+        view.backgroundColor = .systemGray6
         view.addSubview(exampleName)
         view.addSubview(newButton)
-        setupBigConstraints()
-        exampleName.backgroundColor = .gray
+        exampleName.backgroundColor = .systemGray6
         title = "Profile"
         setupBigConstraints()
     }

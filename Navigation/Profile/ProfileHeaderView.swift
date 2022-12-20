@@ -38,7 +38,7 @@ final class ProfileHeaderView: UIView {
         label.text = "  Watch news..."
         label.textColor = .lightGray
         label.font = .systemFont(ofSize: 14, weight: UIFont.Weight.regular)
-        label.backgroundColor = .gray
+        label.backgroundColor = .systemGray6
         label.layer.cornerRadius = 12
         label.layer.borderColor = UIColor.systemGray.cgColor
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -83,6 +83,7 @@ final class ProfileHeaderView: UIView {
         backgroundColor = .gray
         addAllSubviews()
         setupConstraints()
+        setupGestures()
         setupButton()
         editText()
     }
@@ -140,7 +141,16 @@ final class ProfileHeaderView: UIView {
             print(text)
         }
     }
-    
+
+    private func setupGestures() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.forcedHidingKeyboard))
+        self.addGestureRecognizer(tapGesture)
+    }
+
+    @objc private func forcedHidingKeyboard() {
+        self.endEditing(true)
+    }
+
     private func editText() {
         statusTextField.addTarget(self, action: #selector(statusTextChanged), for: .editingChanged)
     }

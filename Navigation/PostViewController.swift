@@ -31,7 +31,7 @@ final class PostViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = post.title
-        self.view.backgroundColor = .lightGray
+        self.view.backgroundColor = .systemGray6
         setupBarButtonItem()
     }
     

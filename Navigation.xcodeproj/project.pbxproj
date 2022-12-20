@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		212FB4672930ED70000A4CFC /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FB4662930ED70000A4CFC /* ProfileHeaderView.swift */; };
 		212FB46B29329F16000A4CFC /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FB46A29329F16000A4CFC /* TextFieldWithPadding.swift */; };
+		2152BD12293F88CE00B190C6 /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BD11293F88CE00B190C6 /* ColorSet.swift */; };
+		2152BD1429409A5300B190C6 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BD1329409A5300B190C6 /* LogInViewController.swift */; };
 		2153FAF5292ABDA20027810B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAF4292ABDA20027810B /* TabBarController.swift */; };
 		2153FAF9292ABE1C0027810B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAF8292ABE1C0027810B /* FeedViewController.swift */; };
 		2153FAFB292ABE3C0027810B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAFA292ABE3C0027810B /* ProfileViewController.swift */; };
@@ -20,11 +22,15 @@
 		219E7F672923C38F002CAE39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219E7F662923C38F002CAE39 /* Assets.xcassets */; };
 		219E7F6A2923C38F002CAE39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219E7F682923C38F002CAE39 /* LaunchScreen.storyboard */; };
 		219E7F722923C433002CAE39 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 219E7F712923C433002CAE39 /* .gitignore */; };
+		21BC36DC2951ACAE0061A077 /* UIView extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC36DB2951ACAE0061A077 /* UIView extension.swift */; };
+		21BC36DE2951ACD30061A077 /* UIImage extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC36DD2951ACD30061A077 /* UIImage extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		212FB4662930ED70000A4CFC /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		212FB46A29329F16000A4CFC /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
+		2152BD11293F88CE00B190C6 /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
+		2152BD1329409A5300B190C6 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		2153FAF4292ABDA20027810B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		2153FAF8292ABE1C0027810B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		2153FAFA292ABE3C0027810B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +44,8 @@
 		219E7F692923C38F002CAE39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		219E7F6B2923C38F002CAE39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		219E7F712923C433002CAE39 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		21BC36DB2951ACAE0061A077 /* UIView extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView extension.swift"; sourceTree = "<group>"; };
+		21BC36DD2951ACD30061A077 /* UIImage extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage extention.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +62,11 @@
 		212FB4632930ECD7000A4CFC /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				212FB4662930ED70000A4CFC /* ProfileHeaderView.swift */,
+				2152BD1329409A5300B190C6 /* LogInViewController.swift */,
 				2153FAFA292ABE3C0027810B /* ProfileViewController.swift */,
+				212FB4662930ED70000A4CFC /* ProfileHeaderView.swift */,
 				212FB46A29329F16000A4CFC /* TextFieldWithPadding.swift */,
+				2152BD11293F88CE00B190C6 /* ColorSet.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -83,8 +93,9 @@
 				219E7F5D2923C38E002CAE39 /* AppDelegate.swift */,
 				219E7F5F2923C38E002CAE39 /* SceneDelegate.swift */,
 				2153FAF4292ABDA20027810B /* TabBarController.swift */,
-				212FB4632930ECD7000A4CFC /* Profile */,
 				2153FAF8292ABE1C0027810B /* FeedViewController.swift */,
+				21BC36DA2951AC640061A077 /* Global Extentions */,
+				212FB4632930ECD7000A4CFC /* Profile */,
 				2153FAFC292ACBCD0027810B /* PostViewController.swift */,
 				2153FB00292BB6600027810B /* InfoViewController.swift */,
 				2153FAFE292ADC850027810B /* Post.swift */,
@@ -94,6 +105,15 @@
 				219E7F712923C433002CAE39 /* .gitignore */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		21BC36DA2951AC640061A077 /* Global Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				21BC36DB2951ACAE0061A077 /* UIView extension.swift */,
+				21BC36DD2951ACD30061A077 /* UIImage extention.swift */,
+			);
+			path = "Global Extentions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,9 +192,13 @@
 				2153FAF9292ABE1C0027810B /* FeedViewController.swift in Sources */,
 				219E7F5E2923C38E002CAE39 /* AppDelegate.swift in Sources */,
 				219E7F602923C38E002CAE39 /* SceneDelegate.swift in Sources */,
+				21BC36DE2951ACD30061A077 /* UIImage extention.swift in Sources */,
 				2153FAFF292ADC850027810B /* Post.swift in Sources */,
+				2152BD12293F88CE00B190C6 /* ColorSet.swift in Sources */,
 				212FB46B29329F16000A4CFC /* TextFieldWithPadding.swift in Sources */,
+				2152BD1429409A5300B190C6 /* LogInViewController.swift in Sources */,
 				212FB4672930ED70000A4CFC /* ProfileHeaderView.swift in Sources */,
+				21BC36DC2951ACAE0061A077 /* UIView extension.swift in Sources */,
 				2153FB01292BB6600027810B /* InfoViewController.swift in Sources */,
 				2153FAFB292ABE3C0027810B /* ProfileViewController.swift in Sources */,
 			);

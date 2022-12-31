@@ -36,7 +36,7 @@ final class ProfileHeaderView: UIView {
     private let statusLabel: UILabel = {
         let label = UILabel()
         label.text = "  Watch news..."
-        label.textColor = .lightGray
+        label.textColor = .systemGray
         label.font = .systemFont(ofSize: 14, weight: UIFont.Weight.regular)
         label.backgroundColor = .systemGray6
         label.layer.cornerRadius = 12
@@ -65,8 +65,8 @@ final class ProfileHeaderView: UIView {
         let button = UIButton()
         button.setTitle("Set status", for: .normal)
         button.setTitleColor(UIColor.white, for: .normal)
-        button.setTitleColor(UIColor.systemPink, for: .highlighted)
-        button.backgroundColor = .blue
+        button.setTitleColor(UIColor.systemGray6, for: .highlighted)
+        button.backgroundColor = colorSet
         button.layer.cornerRadius = 4
         button.layer.shadowOffset = CGSize(width: 4, height: 4)
         button.layer.shadowRadius = 4

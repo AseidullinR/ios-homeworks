@@ -15,22 +15,10 @@ final class ProfileViewController: UIViewController  {
         return exampleName
     }()
 
-    private let newButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Refresh page", for: .normal)
-        button.setTitleColor(UIColor.white, for: .normal)
-        button.setTitleColor(UIColor.systemPink, for: .highlighted)
-        button.backgroundColor = .blue
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-    }()
-
     override func viewDidLoad() {
         view.backgroundColor = .systemGray6
         view.addSubview(exampleName)
-        view.addSubview(newButton)
         exampleName.backgroundColor = .systemGray6
-        title = "Profile"
         setupBigConstraints()
     }
 
@@ -39,9 +27,6 @@ final class ProfileViewController: UIViewController  {
             exampleName.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             exampleName.rightAnchor.constraint(equalTo: view.rightAnchor),
             exampleName.leftAnchor.constraint(equalTo: view.leftAnchor),
-            newButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            newButton.leftAnchor.constraint(equalTo: view.leftAnchor),
-            newButton.rightAnchor.constraint(equalTo: view.rightAnchor)
         ])
     }
 }

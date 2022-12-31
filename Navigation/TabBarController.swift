@@ -21,7 +21,7 @@ final class TabBarController: UITabBarController {
         profileTabController = UINavigationController.init(rootViewController: LogInViewController())
         feedTabController = UINavigationController(rootViewController: FeedViewController())
 
-        self.viewControllers = [profileTabController, feedTabController,]
+        self.viewControllers = [feedTabController, profileTabController]
 
 
         let profileItem = UITabBarItem(title: "Profile",
@@ -37,9 +37,9 @@ final class TabBarController: UITabBarController {
 
 
         UITabBar.appearance().tintColor = .black
-        UITabBar.appearance().backgroundColor = .white
+        UITabBar.appearance().backgroundColor = .systemGray6
         UITabBar.appearance().tintColor = UIColor(white: 0, alpha: 0.5)
-        UITabBar.appearance().unselectedItemTintColor = .gray
+        UITabBar.appearance().tintColor = colorSet
 
     }
 }

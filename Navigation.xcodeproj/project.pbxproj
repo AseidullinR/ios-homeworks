@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		212FB4672930ED70000A4CFC /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FB4662930ED70000A4CFC /* ProfileHeaderView.swift */; };
 		212FB46B29329F16000A4CFC /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FB46A29329F16000A4CFC /* TextFieldWithPadding.swift */; };
+		21433E93296048BB00B26604 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21433E92296048BB00B26604 /* Post.swift */; };
+		21433E9529604B9A00B26604 /* PostExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21433E9429604B9A00B26604 /* PostExamples.swift */; };
 		2152BD12293F88CE00B190C6 /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BD11293F88CE00B190C6 /* ColorSet.swift */; };
 		2152BD1429409A5300B190C6 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BD1329409A5300B190C6 /* LogInViewController.swift */; };
 		2153FAF5292ABDA20027810B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAF4292ABDA20027810B /* TabBarController.swift */; };
 		2153FAF9292ABE1C0027810B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAF8292ABE1C0027810B /* FeedViewController.swift */; };
 		2153FAFB292ABE3C0027810B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAFA292ABE3C0027810B /* ProfileViewController.swift */; };
 		2153FAFD292ACBCD0027810B /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAFC292ACBCD0027810B /* PostViewController.swift */; };
-		2153FAFF292ADC850027810B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAFE292ADC850027810B /* Post.swift */; };
+		2153FAFF292ADC850027810B /* NewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FAFE292ADC850027810B /* NewPost.swift */; };
 		2153FB01292BB6600027810B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FB00292BB6600027810B /* InfoViewController.swift */; };
 		219E7F5E2923C38E002CAE39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E7F5D2923C38E002CAE39 /* AppDelegate.swift */; };
 		219E7F602923C38E002CAE39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E7F5F2923C38E002CAE39 /* SceneDelegate.swift */; };
@@ -29,13 +31,15 @@
 /* Begin PBXFileReference section */
 		212FB4662930ED70000A4CFC /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		212FB46A29329F16000A4CFC /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
+		21433E92296048BB00B26604 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		21433E9429604B9A00B26604 /* PostExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostExamples.swift; sourceTree = "<group>"; };
 		2152BD11293F88CE00B190C6 /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
 		2152BD1329409A5300B190C6 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		2153FAF4292ABDA20027810B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		2153FAF8292ABE1C0027810B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		2153FAFA292ABE3C0027810B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2153FAFC292ACBCD0027810B /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
-		2153FAFE292ADC850027810B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		2153FAFE292ADC850027810B /* NewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPost.swift; sourceTree = "<group>"; };
 		2153FB00292BB6600027810B /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		219E7F5A2923C38E002CAE39 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		219E7F5D2923C38E002CAE39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 				212FB4662930ED70000A4CFC /* ProfileHeaderView.swift */,
 				212FB46A29329F16000A4CFC /* TextFieldWithPadding.swift */,
 				2152BD11293F88CE00B190C6 /* ColorSet.swift */,
+				21433E92296048BB00B26604 /* Post.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -94,11 +99,12 @@
 				219E7F5F2923C38E002CAE39 /* SceneDelegate.swift */,
 				2153FAF4292ABDA20027810B /* TabBarController.swift */,
 				2153FAF8292ABE1C0027810B /* FeedViewController.swift */,
+				21433E9429604B9A00B26604 /* PostExamples.swift */,
 				21BC36DA2951AC640061A077 /* Global Extentions */,
 				212FB4632930ECD7000A4CFC /* Profile */,
 				2153FAFC292ACBCD0027810B /* PostViewController.swift */,
 				2153FB00292BB6600027810B /* InfoViewController.swift */,
-				2153FAFE292ADC850027810B /* Post.swift */,
+				2153FAFE292ADC850027810B /* NewPost.swift */,
 				219E7F662923C38F002CAE39 /* Assets.xcassets */,
 				219E7F682923C38F002CAE39 /* LaunchScreen.storyboard */,
 				219E7F6B2923C38F002CAE39 /* Info.plist */,
@@ -189,13 +195,15 @@
 			files = (
 				2153FAFD292ACBCD0027810B /* PostViewController.swift in Sources */,
 				2153FAF5292ABDA20027810B /* TabBarController.swift in Sources */,
+				21433E9529604B9A00B26604 /* PostExamples.swift in Sources */,
 				2153FAF9292ABE1C0027810B /* FeedViewController.swift in Sources */,
 				219E7F5E2923C38E002CAE39 /* AppDelegate.swift in Sources */,
 				219E7F602923C38E002CAE39 /* SceneDelegate.swift in Sources */,
 				21BC36DE2951ACD30061A077 /* UIImage extention.swift in Sources */,
-				2153FAFF292ADC850027810B /* Post.swift in Sources */,
+				2153FAFF292ADC850027810B /* NewPost.swift in Sources */,
 				2152BD12293F88CE00B190C6 /* ColorSet.swift in Sources */,
 				212FB46B29329F16000A4CFC /* TextFieldWithPadding.swift in Sources */,
+				21433E93296048BB00B26604 /* Post.swift in Sources */,
 				2152BD1429409A5300B190C6 /* LogInViewController.swift in Sources */,
 				212FB4672930ED70000A4CFC /* ProfileHeaderView.swift in Sources */,
 				21BC36DC2951ACAE0061A077 /* UIView extension.swift in Sources */,

@@ -17,9 +17,9 @@ final class PostViewController: UIViewController {
         return label
     }()
 
-    private let post: Post
+    private let post: NewPost
 
-    init(post: Post) {
+    init(post: NewPost) {
         self.post = post
         super.init(nibName: nil, bundle: nil)
     }
